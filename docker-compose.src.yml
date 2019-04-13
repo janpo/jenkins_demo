@@ -3,6 +3,7 @@ services:
   jenkins_demo:
     image: IMAGE_LATEST
     deploy:
+      mode: global
       restart_policy:
         condition: on-failure
     expose:
